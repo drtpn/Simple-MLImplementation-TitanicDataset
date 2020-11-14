@@ -16,7 +16,7 @@ nb=MultinomialNB()
 dt=DecisionTreeClassifier(random_state=0)
 gbm=GradientBoostingClassifier(n_estimators=10)
 
-df=pd.read_csv('C:/Users/Lenovo PC/Desktop/VCET-STTP/ML/Titanic/train.csv')
+df=pd.read_csv('./train.csv')
 
 df['Age'].fillna(df['Age'].mean(), inplace=True)
 
